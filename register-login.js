@@ -1,29 +1,29 @@
 /* Copyright (c) 2016 timugz (timugz@gmail.com) */
 'use strict'
 
-var user1Data = {
-  nick: 'nick1',
-  email: 'nick1@example.com',
-  password: 'test1test',
-  repeat: 'test1test',
-  active: true
-}
-
-var user2Data = {
-  nick: 'nick2',
-  email: 'nick2@example.com',
-  password: 'test2test',
-  repeat: 'test2test',
-  active: true
-}
-
-module.exports = function (lab, si) {
+module.exports = function (lab, si, user1Data, user2Data) {
   var _ = require('lodash')
   var Code = require('code')
   var suite = lab.suite
   var test = lab.test
   var before = lab.before
   var expect = Code.expect
+
+  user1Data = _.extend({}, {
+    nick: 'nick1',
+    email: 'nick1@example.com',
+    password: 'test1test',
+    repeat: 'test1test',
+    active: true
+  }, user1Data)
+
+  user2Data = _.extend({}, {
+    nick: 'nick2',
+    email: 'nick2@example.com',
+    password: 'test2test',
+    repeat: 'test2test',
+    active: true
+  }, user2Data)
 
   suite('seneca-user register-login suite tests ', function () {
     before({}, function (done) {

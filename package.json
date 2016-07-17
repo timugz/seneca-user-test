@@ -1,6 +1,6 @@
 {
   "name": "seneca-user-test",
-  "description": "",
+  "description": "Standard tests for plugins which extend seneca-user. It's extracted from seneca-user repository",
   "version": "1.0.2",
   "main": "user-test.js",
   "license": "MIT",
