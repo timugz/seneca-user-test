@@ -1,5 +1,7 @@
 ![Seneca](http://senecajs.org/files/assets/seneca-logo.png)
 
+# seneca-user-test
+
 [![Build Status][travis-badge]][travis-url]
 [![Gitter][gitter-badge]][gitter-url]
 
@@ -48,3 +50,12 @@ describe('inheritance', function () {
 ```
 
 Current Version: 1.0.2 (same as [seneca-user](https://github.com/senecajs/seneca-user) plugin)
+
+
+[Seneca.js]: https://www.npmjs.com/package/seneca
+[travis-badge]: https://travis-ci.org/timugz/seneca-user-test.svg
+[travis-url]: https://travis-ci.org/timugz/seneca-user-test
+[gitter-badge]: https://badges.gitter.im/Join%20Chat.svg
+[gitter-url]: https://gitter.im/timugz/seneca-plugins
+[standard-badge]: https://raw.githubusercontent.com/feross/standard/master/badge.png
+[standard-style]: https://github.com/feross/standard
